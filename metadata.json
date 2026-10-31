@@ -1,0 +1,6 @@
+{
+  "name": "Cacerista Asistencia & Tutoría - I.E. Andrés Avelino Cáceres",
+  "description": "Sistema móvil de asistencia pedagógica, seguimiento de tutoría y reportes SIAGIE para la I.E. Andrés Avelino Cáceres Dorregaray (UGEL 04 Collique).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

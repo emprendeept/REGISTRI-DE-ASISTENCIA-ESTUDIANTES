@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "surface-variant": "#dae2fd", "on-background": "#131b2e", "secondary-fixed": "#ffdcc3", "on-primary": "#ffffff", "on-primary-container": "#ffcdc7", "inverse-surface": "#283044", "on-tertiary": "#ffffff", "on-surface": "#131b2e", "primary-fixed-dim": "#ffb4ab", "on-primary-fixed-variant": "#93000b", "surface-bright": "#faf8ff", "on-error": "#ffffff", "surface-container-low": "#f2f3ff", "tertiary-fixed": "#85f8c4", "on-secondary-fixed-variant": "#6e3900", "secondary-fixed-dim": "#ffb77d", "surface-container": "#eaedff", "error": "#ba1a1a", "surface": "#faf8ff", "on-secondary-container": "#663500", "inverse-on-surface": "#eef0ff", "on-tertiary-container": "#7aeeba", "tertiary-fixed-dim": "#68dba9", "error-container": "#ffdad6", "on-tertiary-fixed": "#002114", "surface-container-high": "#e2e7ff", "on-error-container": "#93000a", "primary-fixed": "#ffdad6", "secondary": "#904d00", "inverse-primary": "#ffb4ab", "on-tertiary-fixed-variant": "#005137", "tertiary": "#005137", "secondary-container": "#fe932c", "background": "#faf8ff", "on-secondary": "#ffffff", "surface-dim": "d2d9f4", "on-secondary-fixed": "#2f1500", "tertiary-container": "#006c4a", "primary-container": "#b91c1c", "surface-container-highest": "#dae2fd", "primary": "#93000b", "on-surface-variant": "#5b403d", "on-primary-fixed": "#410002", "surface-tint": "#b91c1c", "outline-variant": "#e4beb9", "outline": "#8f6f6c" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "gutter": "1rem", "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1rem", "space-xl": "1.5rem" }, fontFamily: { "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-36 px-gutter flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="logo.png" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1X7vy-LsgWGG7OuULxcVyMPqjkrcp7rBA3815vT6s63WxQAGXc4gp5cJTpug2oxKqanIl6FDRvhg83PfUWKwIPCH7ReEK8w_67U8rCwtX5plWLIwgFJtl3OlfvPzqr_gf3IuLemxCoTka6hEdPTVWYz-_jHOuC0TNCupk6sKtV47y6jP1uyq2BGNl2FJ-WUQa2IpsRh2jGEUYgTAb5KAaAXaR8_DsagKbBr5geBaHjDlQ4yODlTnWAhAd4CB2-dB0X5ARomfo_eqA"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider truncate">I.E. ANDRÉS AVELINO CÁCERES D.</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate leading-tight">Registro Acumulado</h1></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="bg-surface-container-low px-space-md py-space-xs rounded-lg flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-semibold text-on-surface truncate">Prof. Valerio Cristóbal</span><span class="text-outline">|</span><span class="truncate">Área: EPT</span><span class="text-outline">|</span><span class="truncate text-primary font-bold">Contabilidad</span></div><div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5"><button class="px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(0,0,0,0.06)] flex-shrink-0 min-h-[32px] flex items-center justify-center">1° A</button><button class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 min-h-[32px] flex items-center justify-center">2° C</button><button class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 min-h-[32px] flex items-center justify-center">3° A</button><button class="px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex-shrink-0 min-h-[32px] flex items-center gap-1 font-bold shadow-[0_1px_3px_rgba(0,0,0,0.06)]"><span class="material-symbols-outlined text-[14px]">verified</span>Tutoría 2° C</button></div></div></header><main class="flex flex-col relative w-full px-gutter pt-36 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Rango / Bimestre Selector & Metadata Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm mb-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">date_range</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Bimestre III (Acumulado)</span>
+</div>
+<button class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-1 rounded-full shadow-sm text-primary font-label-sm text-label-sm active:scale-95 transition-transform" id="periodModalBtn">
+<span>Cambiar</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Indicador de Días Lectivos -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-space-md py-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Progreso del Periodo</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">días lectivos</span>
+</div>
+</div>
+</div>
+<!-- Tarjetas Métricas Globales del Aula (Bento style mobile grid) -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<!-- Asistencia Promedio Card -->
+<div class="col-span-2 bg-gradient-to-br from-surface-container-lowest to-surface-container-low p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Asistencia Promedio</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary font-bold">91.4%</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-1.5 py-0.5 rounded-full font-bold">+2.1% vs BII</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Meta institucional: &gt;88%</span>
+</div>
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="91.4, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined absolute text-[22px] text-tertiary">school</span>
+</div>
+</div>
+<!-- Total Asistencias -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Asistencias</span>
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">1,280</span>
+<p class="font-body-sm text-body-sm text-tertiary font-medium">Registros válidos</p>
+</div>
+</div>
+<!-- Total Tardanzas -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tardanzas</span>
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+</div>
+</div>
+<div class="mt-2">
+<span class="font-headline-md text-headline-md text-secondary font-bold">68</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5.1% del total</p>
+</div>
+</div>
+<!-- Total Faltas Injustificadas Banner -->
+<div class="col-span-2 bg-error-container text-on-error-container p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error text-on-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-error-container">45 Faltas</span>
+<span class="font-label-sm text-label-sm bg-error text-on-error px-1.5 py-0.5 rounded-full">Injustificadas</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 alumnos en umbral crítico SIAGIE</span>
+</div>
+</div>
+<button class="bg-surface-container-lowest text-error px-space-sm py-1.5 rounded-lg font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-transform flex items-center gap-1">
+        Revisar
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Buscador y Acciones SIAGIE -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 bg-surface-container-lowest rounded-xl shadow-sm flex items-center px-space-md py-2.5">
+<span class="material-symbols-outlined text-[20px] text-outline mr-2">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none" id="searchInput" placeholder="Buscar por apellido o nombre..." type="text"/>
+</div>
+<!-- Botón Exportar SIAGIE -->
+<button class="bg-primary text-on-primary h-11 px-space-md rounded-xl font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform flex-shrink-0" id="exportBtn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>SIAGIE</span>
+</button>
+</div>
+<!-- Filtros Rápidos de visualización -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="filter-pill active bg-on-surface text-surface px-space-md py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap" data-filter="all">Todos (32)</button>
+<button class="filter-pill bg-surface-container-low text-on-surface-variant px-space-md py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap flex items-center gap-1" data-filter="risk">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+        Alerta de Riesgo (3)
+      </button>
+<button class="filter-pill bg-surface-container-low text-on-surface-variant px-space-md py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap" data-filter="perfect">100% Asistencia (14)</button>
+</div>
+</div>
+<!-- Lista de Estudiantes -->
+<div class="flex flex-col gap-space-sm" id="studentsList">
+<!-- Estudiante 1: Riesgo Crítico (Semáforo Rojo) -->
+<div class="student-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-name="AGUILAR MENDOZA, CARLOS DANIEL" data-risk="true">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center flex-shrink-0 font-bold">01</span>
+<div class="flex flex-col min-w-0">
+<h2 class="font-body-lg text-body-lg font-bold text-on-surface truncate leading-tight">AGUILAR MENDOZA, Carlos</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cód. Matrícula: 2024-00412</span>
+</div>
+</div>
+<!-- Alerta Semáforo -->
+<div class="flex items-center gap-1 bg-error-container text-on-error-container px-2 py-0.5 rounded-full flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold">Riesgo 5 Faltas</span>
+</div>
+</div>
+<!-- Barra de Asistencia Visual -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Cumplimiento lectivo</span>
+<span class="font-label-sm text-label-sm font-bold text-error">78.5%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 78.5%;"></div>
+</div>
+</div>
+<!-- Badges Contadores -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<div class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Asistencias</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">33 d</span>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Tardanzas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">4 d</span>
+</div>
+<div class="bg-error-container text-on-error-container px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Faltas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight text-error">5 d</span>
+</div>
+</div>
+<!-- Acciones de Ficha Estudiante -->
+<div class="flex items-center justify-between pt-1">
+<button class="citacion-btn text-error font-label-sm text-label-sm font-bold flex items-center gap-1 bg-surface-container-low px-space-sm py-1 rounded-md">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+          Citar Apoderado
+        </button>
+<button class="historial-btn bg-surface-container text-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" data-id="1">
+<span>Historial detallado</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Estudiante 2: Desempeño Regular/Bueno -->
+<div class="student-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-name="BARRERA QUISPE, LUCÍA MARGARITA" data-risk="false">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center flex-shrink-0 font-bold">02</span>
+<div class="flex flex-col min-w-0">
+<h2 class="font-body-lg text-body-lg font-bold text-on-surface truncate leading-tight">BARRERA QUISPE, Lucía</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cód. Matrícula: 2024-00891</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full flex-shrink-0">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-medium">Regular</span>
+</div>
+</div>
+<!-- Barra de Asistencia Visual -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Cumplimiento lectivo</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary">92.8%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 92.8%;"></div>
+</div>
+</div>
+<!-- Badges Contadores -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<div class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Asistencias</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">39 d</span>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Tardanzas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">2 d</span>
+</div>
+<div class="bg-surface-container text-on-surface-variant px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Faltas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">1 d</span>
+</div>
+</div>
+<div class="flex items-center justify-end pt-1">
+<button class="historial-btn bg-surface-container text-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" data-id="2">
+<span>Historial detallado</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Estudiante 3: Excelente (100% Asistencia) -->
+<div class="student-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-name="CASTILLO FLORES, SEBASTIÁN ANDRÉS" data-perfect="true" data-risk="false">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md flex items-center justify-center flex-shrink-0 font-bold">03</span>
+<div class="flex flex-col min-w-0">
+<h2 class="font-body-lg text-body-lg font-bold text-on-surface truncate leading-tight">CASTILLO FLORES, Sebastián</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cód. Matrícula: 2024-00104</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="font-label-sm text-label-sm font-bold">100% Óptimo</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Cumplimiento lectivo</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary">100%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<div class="bg-tertiary text-on-tertiary px-2 py-1.5 rounded-lg flex flex-col items-center justify-center shadow-xs">
+<span class="font-label-sm text-label-sm opacity-90">Asistencias</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">42 d</span>
+</div>
+<div class="bg-surface-container text-on-surface-variant px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Tardanzas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">0 d</span>
+</div>
+<div class="bg-surface-container text-on-surface-variant px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Faltas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">0 d</span>
+</div>
+</div>
+<div class="flex items-center justify-end pt-1">
+<button class="historial-btn bg-surface-container text-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" data-id="3">
+<span>Historial detallado</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Estudiante 4: Alerta Moderada Tardanzas -->
+<div class="student-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all" data-name="DURAND SOTO, MATEO ALEJANDRO" data-risk="false">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center flex-shrink-0 font-bold">04</span>
+<div class="flex flex-col min-w-0">
+<h2 class="font-body-lg text-body-lg font-bold text-on-surface truncate leading-tight">DURAND SOTO, Mateo</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cód. Matrícula: 2024-00673</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">warning_amber</span>
+<span class="font-label-sm text-label-sm font-bold">Reincidente Tard.</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Cumplimiento lectivo</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">85.7%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 85.7%;"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<div class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Asistencias</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">36 d</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Tardanzas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">6 d</span>
+</div>
+<div class="bg-surface-container text-on-surface-variant px-2 py-1.5 rounded-lg flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm">Faltas</span>
+<span class="font-headline-sm text-headline-sm font-bold leading-tight">0 d</span>
+</div>
+</div>
+<div class="flex items-center justify-end pt-1">
+<button class="historial-btn bg-surface-container text-primary px-space-md py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" data-id="4">
+<span>Historial detallado</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Drawer / Modal de Detalle Historial (Simulado interactivo) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex flex-col justify-end" id="historyModal">
+<div class="bg-surface rounded-t-2xl p-space-lg max-h-[707px] overflow-y-auto flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modalStudentName">Historial de Estudiante</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2° Grado "C" - Bimestre III</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Resumen rápido en el modal -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-around text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Presentes</span>
+<p class="font-headline-sm text-headline-sm text-tertiary font-bold" id="modalP">38</p>
+</div>
+<div class="w-px h-8 bg-surface-container"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tardanzas</span>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold" id="modalT">3</p>
+</div>
+<div class="w-px h-8 bg-surface-container"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Faltas</span>
+<p class="font-headline-sm text-headline-sm text-error font-bold" id="modalF">1</p>
+</div>
+</div>
+<!-- Timeline de Últimas Sesiones de Clase -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Últimas 5 Sesiones (EPT - Contabilidad)</span>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Viernes, 18 Octubre</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded text-label-sm font-bold">Presente (08:02 AM)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Miércoles, 16 Octubre</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded text-label-sm font-bold">Tardanza (08:24 AM)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Viernes, 11 Octubre</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded text-label-sm font-bold">Presente (07:55 AM)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Miércoles, 09 Octubre</span>
+</div>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded text-label-sm font-bold">Falta Injustificada</span>
+</div>
+<div class="flex items-center justify-between p-2.5 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Viernes, 04 Octubre</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded text-label-sm font-bold">Presente (07:50 AM)</span>
+</div>
+</div>
+<!-- Botón de acción dentro del modal -->
+<button class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-lg text-label-lg font-bold shadow-md active:scale-[0.98] transition-transform" id="closeModalBottomBtn">
+        Entendido / Cerrar
+      </button>
+</div>
+</div>
+<!-- Toast de Exportación Feedback -->
+<div class="fixed top-24 left-4 right-4 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-lg flex items-center justify-between transition-all duration-300 opacity-0 pointer-events-none translate-y-[-20px]" id="exportToast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Generando archivo SIAGIE</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest">Descargando "2C_EPT_Asistencia_BIII.xlsx"</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+</div>
+</div>
+<script>
+  // Micro-interacciones locales para el Docente
+  const searchInput = document.getElementById('searchInput');
+  const studentCards = document.querySelectorAll('.student-card');
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const exportBtn = document.getElementById('exportBtn');
+  const exportToast = document.getElementById('exportToast');
+  
+  // Modal Historial
+  const historyModal = document.getElementById('historyModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const closeModalBottomBtn = document.getElementById('closeModalBottomBtn');
+  const modalStudentName = document.getElementById('modalStudentName');
+  const modalP = document.getElementById('modalP');
+  const modalT = document.getElementById('modalT');
+  const modalF = document.getElementById('modalF');
+
+  // Filtrado por buscador
+  searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase().trim();
+    studentCards.forEach(card => {
+      const name = card.getAttribute('data-name').toLowerCase();
+      if (name.includes(term)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  // Filtros rápidos
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => {
+        p.classList.remove('bg-on-surface', 'text-surface');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      pill.classList.add('bg-on-surface', 'text-surface');
+
+      const filterType = pill.getAttribute('data-filter');
+      studentCards.forEach(card => {
+        if (filterType === 'all') {
+          card.style.display = 'flex';
+        } else if (filterType === 'risk') {
+          card.style.display = card.getAttribute('data-risk') === 'true' ? 'flex' : 'none';
+        } else if (filterType === 'perfect') {
+          card.style.display = card.getAttribute('data-perfect') === 'true' ? 'flex' : 'none';
+        }
+      });
+    });
+  });
+
+  // Exportar Excel SIAGIE Feedback
+  exportBtn.addEventListener('click', () => {
+    exportToast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
+    exportToast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      exportToast.classList.remove('opacity-100', 'translate-y-0');
+      exportToast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
+    }, 2800);
+  });
+
+  // Abrir Modal Historial
+  document.querySelectorAll('.historial-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.student-card');
+      const name = card.getAttribute('data-name');
+      modalStudentName.textContent = name;
+      
+      if (card.getAttribute('data-risk') === 'true') {
+        modalP.textContent = '33';
+        modalT.textContent = '4';
+        modalF.textContent = '5';
+      } else if (card.getAttribute('data-perfect') === 'true') {
+        modalP.textContent = '42';
+        modalT.textContent = '0';
+        modalF.textContent = '0';
+      } else {
+        modalP.textContent = '38';
+        modalT.textContent = '3';
+        modalF.textContent = '1';
+      }
+
+      historyModal.classList.remove('hidden');
+    });
+  });
+
+  // Cerrar Modal
+  const closeModal = () => historyModal.classList.add('hidden');
+  closeModalBtn.addEventListener('click', closeModal);
+  closeModalBottomBtn.addEventListener('click', closeModal);
+  historyModal.addEventListener('click', (e) => {
+    if (e.target === historyModal) closeModal();
+  });
+
+  // Citación rápida apoderado
+  document.querySelectorAll('.citacion-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      alert('Se ha agendado la notificación para la libreta de control y llamada al apoderado vía SIAGIE/Tutoría.');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_10px_rgba(15,23,42,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 w-20 h-14 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="asistencia-diaria" href="#"><span class="material-symbols-outlined text-[24px]">how_to_reg</span><span class="font-label-sm text-label-sm text-center leading-none">Asistencia</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-20 h-14 rounded-lg transition-colors text-primary font-bold" data-path="registro-acumulado" href="#"><span class="material-symbols-outlined text-[24px]">analytics</span><span class="font-label-sm text-label-sm text-center leading-none">Acumulado</span></a><a class="flex flex-col items-center justify-center gap-1 w-20 h-14 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="estudiantes" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm text-center leading-none">Estudiantes</span></a><a class="flex flex-col items-center justify-center gap-1 w-20 h-14 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="reportes-tutoria" href="#"><span class="material-symbols-outlined text-[24px]">assignment_late</span><span class="font-label-sm text-label-sm text-center leading-none">Tutoría</span></a></div></nav></body></html>
